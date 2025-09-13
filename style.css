@@ -18,7 +18,8 @@ ul {
 }
 
 img {
-    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -67,7 +68,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .awesome-placeholder {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 }
 
 .awesome {
@@ -91,7 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .three {
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: #3882F6;
     padding: 20px 50px;
     align-self: flex-start;
@@ -107,3 +108,50 @@ p, h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+.section2 {
+    display: flex;
+    color: #1F2937;
+    flex-direction: column;
+}
+
+.header-section2 {
+    flex: 1;
+    font-size: 36px;
+    text-align: center;
+    align-self: flex-start;
+    font-weight: 900;
+    padding: 50px 0px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 64px;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-object {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;    
+    border-radius: 15px;
+    border-color: #3882F6;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    width: 100%; 
+    text-align: center;
+}
